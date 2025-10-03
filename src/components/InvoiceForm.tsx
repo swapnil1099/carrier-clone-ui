@@ -24,8 +24,8 @@ const InvoiceForm = () => {
           Back
         </Button>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-          <Card className="lg:col-span-2 p-6">
+        <div className="flex gap-6">
+          <Card className="p-6" style={{ width: '592px', height: '570px', borderRadius: '8px' }}>
             <div className="flex items-center justify-between mb-6">
               <h1 className="text-2xl font-normal text-foreground">Submit an Invoice Inquiry</h1>
               <Heart className="h-5 w-5 text-muted-foreground hover:text-primary cursor-pointer" />
@@ -152,31 +152,31 @@ const InvoiceForm = () => {
             </div>
           </Card>
 
-          <div className="space-y-4">
-            <Card className="p-4">
-              <Button className="w-full bg-accent hover:bg-accent/90 text-accent-foreground">
-                Submit
-              </Button>
-            </Card>
-
-            <Card className="p-4">
-              <h3 className="font-medium text-foreground mb-3">Required information</h3>
+          <Card className="p-4" style={{ width: '183px', height: '179px', borderRadius: '8px' }}>
+            <Button className="w-full bg-accent hover:bg-accent/90 text-accent-foreground mb-4">
+              Submit
+            </Button>
+            
+            <div className="border-t border-border my-4" />
+            
+            <div>
+              <h3 className="font-medium text-foreground mb-3 text-sm">Required information</h3>
               <div className="flex flex-wrap gap-2">
-                <span className="px-3 py-1 text-xs border border-info-badge text-info-badge rounded">
+                <span className="px-2 py-1 text-xs border border-info-badge text-info-badge rounded">
                   Entity
                 </span>
-                <span className="px-3 py-1 text-xs border border-info-badge text-info-badge rounded">
+                <span className="px-2 py-1 text-xs border border-info-badge text-info-badge rounded">
                   Supplier
                 </span>
-                <span className="px-3 py-1 text-xs border border-info-badge text-info-badge rounded">
+                <span className="px-2 py-1 text-xs border border-info-badge text-info-badge rounded">
                   Inquiry Type
                 </span>
-                <span className="px-3 py-1 text-xs border border-info-badge text-info-badge rounded">
+                <span className="px-2 py-1 text-xs border border-info-badge text-info-badge rounded">
                   Description
                 </span>
               </div>
-            </Card>
-          </div>
+            </div>
+          </Card>
         </div>
       </div>
     </div>
