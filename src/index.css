@@ -17,7 +17,7 @@ All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 220 15% 20%;
 
-    --primary: 220 80% 38%;
+    --primary: 218 65% 42%;
     --primary-foreground: 0 0% 100%;
 
     --secondary: 220 14% 96%;
@@ -26,7 +26,7 @@ All colors MUST be HSL.
     --muted: 220 14% 96%;
     --muted-foreground: 220 10% 45%;
 
-    --accent: 250 60% 58%;
+    --accent: 248 53% 55%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
@@ -34,15 +34,15 @@ All colors MUST be HSL.
 
     --border: 220 13% 88%;
     --input: 220 13% 91%;
-    --ring: 220 80% 38%;
+    --ring: 218 65% 42%;
 
     --radius: 0.25rem;
 
-    --nav-bg: 220 80% 38%;
-    --nav-secondary: 220 90% 28%;
+    --nav-bg: 218 65% 42%;
+    --nav-secondary: 218 70% 30%;
     --nav-text: 0 0% 100%;
     
-    --info-badge: 14 100% 50%;
+    --info-badge: 14 100% 51%;
   }
 
   .dark {
@@ -55,7 +55,7 @@ All colors MUST be HSL.
     --popover: 220 15% 15%;
     --popover-foreground: 0 0% 95%;
 
-    --primary: 220 70% 50%;
+    --primary: 218 65% 42%;
     --primary-foreground: 0 0% 100%;
 
     --secondary: 220 15% 20%;
@@ -64,7 +64,7 @@ All colors MUST be HSL.
     --muted: 220 15% 20%;
     --muted-foreground: 220 10% 60%;
 
-    --accent: 250 60% 58%;
+    --accent: 248 53% 55%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 62.8% 30.6%;
@@ -72,10 +72,10 @@ All colors MUST be HSL.
 
     --border: 220 15% 25%;
     --input: 220 15% 25%;
-    --ring: 220 70% 50%;
+    --ring: 218 65% 42%;
     
-    --nav-bg: 220 80% 38%;
-    --nav-secondary: 220 90% 28%;
+    --nav-bg: 218 65% 42%;
+    --nav-secondary: 218 70% 30%;
     --nav-text: 0 0% 100%;
   }
 }
