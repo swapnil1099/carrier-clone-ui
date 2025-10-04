@@ -4,10 +4,12 @@ import { Input } from "@/components/ui/input";
 
 const Header = () => {
   return (
-    <header className="bg-nav text-nav-text">
+    <header className="bg-gradient-to-r from-nav-gradient-from to-nav-gradient-to text-nav-text">
       <div className="flex items-center justify-between px-6 py-2.5">
         <div className="flex items-center">
-          <div className="text-xl font-semibold italic">Carrier</div>
+          <div className="border-2 border-white rounded-full px-4 py-1.5">
+            <span className="text-lg font-semibold italic tracking-wide">Carrier</span>
+          </div>
         </div>
         
         <div className="flex-1 max-w-xl mx-8">
@@ -45,7 +47,7 @@ const Header = () => {
         </div>
       </div>
 
-      <nav className="bg-nav-secondary px-6 py-2.5">
+      <nav className="bg-gradient-to-r from-nav-secondary-gradient-from to-nav-secondary-gradient-to px-6 py-2.5">
         <div className="flex items-center gap-6 text-sm">
           <button className="text-nav-text hover:text-white py-1.5 flex items-center gap-1.5">
             All Applications

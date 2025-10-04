@@ -47,11 +47,15 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        nav: {
-          DEFAULT: "hsl(var(--nav-bg))",
-          secondary: "hsl(var(--nav-secondary))",
-          text: "hsl(var(--nav-text))",
-        },
+				nav: {
+					DEFAULT: "hsl(var(--nav-bg))",
+					secondary: "hsl(var(--nav-secondary))",
+					text: "hsl(var(--nav-text))",
+					"gradient-from": "hsl(var(--nav-gradient-from))",
+					"gradient-to": "hsl(var(--nav-gradient-to))",
+					"secondary-gradient-from": "hsl(var(--nav-secondary-gradient-from))",
+					"secondary-gradient-to": "hsl(var(--nav-secondary-gradient-to))",
+				},
         info: {
           badge: "hsl(var(--info-badge))",
         },

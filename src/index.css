@@ -42,6 +42,11 @@ All colors MUST be HSL.
     --nav-secondary: 218 70% 30%;
     --nav-text: 0 0% 100%;
     
+    --nav-gradient-from: 217 75% 25%;
+    --nav-gradient-to: 211 85% 55%;
+    --nav-secondary-gradient-from: 217 75% 22%;
+    --nav-secondary-gradient-to: 211 85% 45%;
+    
     --info-badge: 14 100% 51%;
   }
 
@@ -77,6 +82,11 @@ All colors MUST be HSL.
     --nav-bg: 218 65% 42%;
     --nav-secondary: 218 70% 30%;
     --nav-text: 0 0% 100%;
+    
+    --nav-gradient-from: 217 75% 25%;
+    --nav-gradient-to: 211 85% 55%;
+    --nav-secondary-gradient-from: 217 75% 22%;
+    --nav-secondary-gradient-to: 211 85% 45%;
   }
 }
 
