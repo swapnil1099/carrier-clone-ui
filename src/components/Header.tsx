@@ -5,30 +5,33 @@ import carrierLogo from "@/assets/carrier-logo.png";
 const Header = () => {
   return (
     <header className="bg-gradient-to-r from-nav-gradient-from to-nav-gradient-to text-nav-text">
-      <div className="flex items-center justify-between px-6 py-2.5">
+      {/* Top Bar */}
+      <div className="max-w-[1400px] mx-auto flex items-center justify-between px-6 py-2.5">
         {/* Logo */}
         <div className="flex items-center">
           <img
             src="https://upload.wikimedia.org/wikipedia/commons/8/8f/Logo_of_the_Carrier_Corporation.svg"
             alt="Carrier"
-            className="h-10 mix-blend-screen" 
+            className="h-8 mix-blend-screen"
           />
         </div>
-        
+
         {/* Search */}
-        <div className="flex-1 max-w-xl mx-8">
-          <div className="relative">
-            <Input
-              type="search"
-              placeholder="Search"
-              className="w-full bg-white text-foreground pl-4 pr-10 py-2 rounded-md border-0 h-9"
-            />
-            <Search className="absolute right-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
-          </div>
-        </div>
+        
+     
 
         {/* Right Actions */}
         <div className="flex items-center gap-3">
+        <div className="mx-4 w-[600px]">
+  <div className="relative">
+    <Input
+      type="search"
+      placeholder="Search"
+      className="w-full bg-white text-foreground pl-4 pr-10 py-2 rounded-xl border h-9"
+    />
+    <Search className="absolute right-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
+  </div>
+</div>
           <button className="flex items-center gap-1.5 text-nav-text hover:text-white text-sm">
             <Key className="h-4 w-4" />
             Self-Service Password Reset
@@ -53,8 +56,8 @@ const Header = () => {
       </div>
 
       {/* Navigation Menu */}
-      <nav className="bg-gradient-to-r from-nav-secondary-gradient-from to-nav-secondary-gradient-to px-6 py-2.5">
-        <div className="flex items-center gap-6 text-sm">
+      <nav className="bg-gradient-to-r from-nav-secondary-gradient-from to-nav-secondary-gradient-to">
+        <div className="max-w-[1400px] mx-auto flex items-center gap-6 px-6 py-2.5 text-sm">
           {[
             "All Applications",
             "Identity & Access",
@@ -80,4 +83,3 @@ const Header = () => {
 };
 
 export default Header;
-
