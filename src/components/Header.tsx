@@ -56,7 +56,7 @@ const Header = () => {
       </div>
 
       {/* Navigation Menu */}
-      <nav className="bg-gradient-to-r from-nav-secondary-gradient-from to-nav-secondary-gradient-to">
+     
         <div className="max-w-[1400px] mx-auto flex items-center gap-6 px-6 py-2.5 text-sm">
           {[
             "All Applications",
@@ -77,7 +77,7 @@ const Header = () => {
             </button>
           ))}
         </div>
-      </nav>
+
     </header>
   );
 };
