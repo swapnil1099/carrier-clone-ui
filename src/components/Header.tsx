@@ -1,15 +1,14 @@
 import { Search, Heart, ShoppingCart, Key, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
+import carrierLogo from "@/assets/carrier-logo.png";
 
 const Header = () => {
   return (
     <header className="bg-gradient-to-r from-nav-gradient-from to-nav-gradient-to text-nav-text">
       <div className="flex items-center justify-between px-6 py-2.5">
         <div className="flex items-center">
-          <div className="border-2 border-white rounded-full px-4 py-1.5">
-            <span className="text-lg font-semibold italic tracking-wide">Carrier</span>
-          </div>
+          <img src={carrierLogo} alt="Carrier" className="h-10" />
         </div>
         
         <div className="flex-1 max-w-xl mx-8">
