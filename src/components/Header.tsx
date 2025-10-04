@@ -1,83 +1,83 @@
-import { Search, Heart, ShoppingCart, Key, User } from "lucide-react";
+import { Search, Heart, ShoppingCart, Key, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 
 const Header = () => {
   return (
     <header className="bg-nav text-nav-text">
-      <div className="flex items-center justify-between px-6 py-3">
-        <div className="flex items-center gap-6">
-          <div className="text-2xl font-bold italic">Carrier</div>
+      <div className="flex items-center justify-between px-6 py-2.5">
+        <div className="flex items-center">
+          <div className="text-xl font-semibold italic">Carrier</div>
         </div>
         
-        <div className="flex-1 max-w-md mx-8">
+        <div className="flex-1 max-w-xl mx-8">
           <div className="relative">
             <Input
               type="search"
               placeholder="Search"
-              className="w-full bg-white text-foreground pl-4 pr-10 py-2 rounded-full"
+              className="w-full bg-white text-foreground pl-4 pr-10 py-2 rounded-md border-0 h-9"
             />
-            <Search className="absolute right-3 top-1/2 -translate-y-1/2 h-5 w-5 text-muted-foreground" />
+            <Search className="absolute right-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
           </div>
         </div>
 
-        <div className="flex items-center gap-4">
-          <Button variant="ghost" size="sm" className="text-nav-text hover:bg-nav-secondary text-xs">
-            <Key className="mr-1 h-4 w-4" />
+        <div className="flex items-center gap-3">
+          <button className="flex items-center gap-1.5 text-nav-text hover:text-white text-sm">
+            <Key className="h-4 w-4" />
             Self-Service Password Reset
-          </Button>
-          <Button variant="ghost" size="sm" className="text-nav-text hover:bg-nav-secondary text-xs">
+          </button>
+          <button className="text-nav-text hover:text-white text-sm">
             My Assets
-          </Button>
-          <Button variant="ghost" size="icon" className="text-nav-text hover:bg-nav-secondary">
+          </button>
+          <button className="text-nav-text hover:text-white">
             <Heart className="h-5 w-5" />
-          </Button>
-          <Button variant="ghost" size="icon" className="text-nav-text hover:bg-nav-secondary rounded-full">
-            <User className="h-5 w-5" />
-          </Button>
-          <Button variant="ghost" size="sm" className="text-nav-text hover:bg-nav-secondary">
-            <ShoppingCart className="mr-1 h-4 w-4" />
-            Cart
-          </Button>
-          <Button variant="ghost" size="sm" className="text-nav-text hover:bg-nav-secondary text-xs">
+          </button>
+          <button className="flex items-center justify-center w-8 h-8 rounded-full bg-white text-nav">
+            <span className="text-sm font-semibold">M</span>
+          </button>
+          <button className="flex items-center gap-1 text-nav-text hover:text-white">
+            <ShoppingCart className="h-4 w-4" />
+            <span className="text-sm">Cart</span>
+          </button>
+          <button className="text-nav-text hover:text-white text-sm">
             Tours
-          </Button>
+          </button>
         </div>
       </div>
 
-      <nav className="bg-nav-secondary px-6 py-2">
+      <nav className="bg-nav-secondary px-6 py-2.5">
         <div className="flex items-center gap-6 text-sm">
-          <button className="text-nav-text hover:text-white py-2 flex items-center gap-1">
+          <button className="text-nav-text hover:text-white py-1.5 flex items-center gap-1.5">
             All Applications
-            <span className="text-xs">▼</span>
+            <ChevronDown className="h-3.5 w-3.5" />
           </button>
-          <button className="text-nav-text hover:text-white py-2 flex items-center gap-1">
+          <button className="text-nav-text hover:text-white py-1.5 flex items-center gap-1.5">
             Identity & Access
-            <span className="text-xs">▼</span>
+            <ChevronDown className="h-3.5 w-3.5" />
           </button>
-          <button className="text-nav-text hover:text-white py-2 flex items-center gap-1">
+          <button className="text-nav-text hover:text-white py-1.5 flex items-center gap-1.5">
             Security
-            <span className="text-xs">▼</span>
+            <ChevronDown className="h-3.5 w-3.5" />
           </button>
-          <button className="text-nav-text hover:text-white py-2 flex items-center gap-1">
+          <button className="text-nav-text hover:text-white py-1.5 flex items-center gap-1.5">
             Computer & Peripherals
-            <span className="text-xs">▼</span>
+            <ChevronDown className="h-3.5 w-3.5" />
           </button>
-          <button className="text-nav-text hover:text-white py-2 flex items-center gap-1">
+          <button className="text-nav-text hover:text-white py-1.5 flex items-center gap-1.5">
             Office 365
-            <span className="text-xs">▼</span>
+            <ChevronDown className="h-3.5 w-3.5" />
           </button>
-          <button className="text-nav-text hover:text-white py-2 flex items-center gap-1">
+          <button className="text-nav-text hover:text-white py-1.5 flex items-center gap-1.5">
             Cloud
-            <span className="text-xs">▼</span>
+            <ChevronDown className="h-3.5 w-3.5" />
           </button>
-          <button className="text-nav-text hover:text-white py-2 flex items-center gap-1">
+          <button className="text-nav-text hover:text-white py-1.5 flex items-center gap-1.5">
             Server, Storage & Network
-            <span className="text-xs">▼</span>
+            <ChevronDown className="h-3.5 w-3.5" />
           </button>
-          <button className="text-nav-text hover:text-white py-2 flex items-center gap-1">
+          <button className="text-nav-text hover:text-white py-1.5 flex items-center gap-1.5">
             Procure-To-Pay
-            <span className="text-xs">▼</span>
+            <ChevronDown className="h-3.5 w-3.5" />
           </button>
         </div>
       </nav>
